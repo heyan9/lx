@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>何岩的旅行纪念册</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .banner {
+      width: 100%;
+      height: 200px;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .banner-text {
+      color: #000;
+      font-size: 1.5rem;
+      padding: 50px;
+    }
+
+    .banner-datetime {
+      color: #666;
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+
+
+     .top-menu-item a {
+    color: white;
+  }
+
+    .top-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+      color: white;
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .top-menu-logo {
+      margin-left: 20px;
+      width: 200px;
+      height: 50px;
+      background-image: url('logo.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .top-menu-item {
+      margin: 0 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .bookcase {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .book {
+      width: 200px;
+      height: 350px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 5px 5px 5px #888;
+      cursor: pointer;
+    }
+
+    .book:hover {
+      background-color: #f2f2f2;
+    }
+
+    .book-cover {
+      width: 200px;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    p {
+      font-size: 0.6rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-menu">
+    <div class="top-menu-logo"></div>
+<div class="top-menu-item"><a href="https://heyan9.github.io/">何岩导航</a></div>
+<div class="top-menu-item"><a href="https://furryheyan.top/">何岩资料站</a></div>
+<div class="top-menu-item"><a href="#">主页</a></div>
+  </div>
+
+  <div class="banner">
+    <div class="banner-text">何岩的旅行纪念册</div>
+    <div class="banner-datetime">
+      <script>
+        // 获取当前日期时间星期节日
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][now.getDay()];
+        const holiday = ['元旦', '春节', '清明节', '劳动节', '端午节', '中秋节', '国庆节'][now.getMonth() * 12 + now.getDate() - 1];
+
+        // 输出日期时间星期节日
+        document.write(`${year}年${month}月${day}日 ${week}`);
+        if (holiday) {
+          document.write(` (${holiday})`);
+        }
+      </script>
+    </div>
+  </div>
+
+  <div class="bookcase">
+    <div class="book" onclick="location.href='https://pan.baidu.com/s/1qK87rNmMMPkmSMDP6RW9ZA?pwd=g243'">
+      <div class="book-cover" style="background-image: url('a1.jpg')"></div>
+      <p>非常值得一去的城市，海滨的风景很美，我带了很多礼品，送给了最珍惜的人</p>
+    </div>
+    <div class="book" onclick="location.href='https://pan.baidu.com/s/1zXk7qRFZ78-c6giBFvItnQ?pwd=h0cd'">
+      <div class="book-cover" style="background-image: url('a2.jpg')"></div>
+      <p>仙岛湖的景色很美，就好像注定要走进的人间仙境，记得预约</p>
+    </div>
+    <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a3.jpg')"></div>
+      <p>路过临沂，是个人杰地灵的城市</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a4.jpg')"></div>
+      <p>海底世界的表演值得一看，最重要的是跟谁看</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a5.jpg')"></div>
+      <p>此生必打卡的烟花</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a6.jpg')"></div>
+      <p>贝塔太可爱了，它值得一个推荐</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a7.jpg')"></div>
+      <p>没什么特别的，记录下这个元旦，我觉得最特别的还是23年元旦的湘兽，具体看B站视频</p>
+    </div>
+   <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a8.jpg')"></div>
+      <p>最近的小熊猫就在生态动物园咯</p>
+    </div>
+   <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a9.jpg')"></div>
+      <p>每年一次的广州行，上一次还是跟昭乐一起去了广州塔看了oufc</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a10.jpg')"></div>
+      <p>星毛是长沙的狂欢，最重要的是见到了瑞狩</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1cqY_XsJFpbKk2lVVtp9m8g?pwd=1e15'">
+      <div class="book-cover" style="background-image: url('a11.jpg')"></div>
+      <p>北野此生必再去，小熊猫0距离</p>
+    </div>
+  <div class="book" onclick="location.href='https://pan.baidu.com/s/1pkAcSEJBecpZC3RkjXSmaQ?pwd=6h1u'">
+      <div class="book-cover" style="background-image: url('a12.jpg')"></div>
+      <p>铜官窑的山清水秀，景色美好</p>
+    </div>
+
+
+
+  </div>
+
+  <div style="height: 150px;"></div>
+
+  <p>该网站由何岩和chatgpt联合研发，所有相册的直链为网页直链，下方可以选择通过百度网盘查看相册的pdf文档下载使用，感谢您的欣赏</p>
+</body>
+</html>
